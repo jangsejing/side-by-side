@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Airplane.iml" filepath="$PROJECT_DIR$/Airplane.iml" group="Airplane" />
+      <module fileurl="file://$PROJECT_DIR$/SideBySide.iml" filepath="$PROJECT_DIR$/SideBySide.iml" group="SideBySide" />
+      <module fileurl="file://$PROJECT_DIR$/app/SideBySide-app.iml" filepath="$PROJECT_DIR$/app/SideBySide-app.iml" group="SideBySide/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Airplane/app" />
     </modules>
   </component>
