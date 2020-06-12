@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!-- tab 위치 포지션 -->
+        <variable
+            name="position"
+            type="int" />
+
+        <!-- tab 클릭한 포지션 -->
+        <variable
+            name="current"
+            type="int" />
+
+        <variable
+            name="model"
+            type="com.ddd.airplane.data.response.ScheduleData" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_broadcast"
+            style="@style/font_b"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@{model.name}"
+            android:textColor="@{position == current ? @color/brand_white : @color/grey600}"
+            android:textSize="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/brand_black"
+            tools:text="방송사별"
+            tools:textColor="@color/brand_white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

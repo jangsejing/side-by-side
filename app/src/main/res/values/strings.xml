@@ -1,3 +1,72 @@
 <resources>
+
+    <!-- common -->
     <string name="app_name">Airplane</string>
+    <string name="empty"></string>
+    <string name="nick_name">닉네임</string>
+    <string name="name">이름</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="chatting">채팅</string>
+    <string name="mypage">마이페이지</string>
+    <string name="my">마이</string>
+    <string name="search">검색</string>
+    <string name="schedule">편성표</string>
+    <string name="home">홈</string>
+    <string name="more">더보기</string>
+    <string name="live">LIVE</string>
+    <string name="send">전송</string>
+    <string name="main">메인</string>
+
+    <!-- error -->
+    <string name="error_network_response_error">네트워크 통신을 실패했어요</string>
+    <string name="error_network_response_null">네트워크 통신을 실패했어요</string>
+    <string name="error_network_response_retry">다시 시도해주세요</string>
+    <string name="error_info">정보를 불러올 수 없어요</string>
+    <string name="error_chat_data">채팅 정보를 불러올 수 없어요</string>
+
+    <!-- splash -->
+    <string name="splash_desc_1">혼자 방송 볼 때 심심하다면?</string>
+    <string name="splash_desc_2">사바사!</string>
+
+    <!-- home -->
+    <string name="home_rank_info">활동 참여자 기준으로 집계합니다.</string>
+    <string name="home_hot_info">활동 참여자 기준으로 집계합니다.</string>
+
+    <!-- search -->
+    <string name="search_many">많이 참여한 방송</string>
+
+    <!-- schedule -->
+    <string name="schedule_broadcast">방송사별</string>
+    <string name="schedule_channel">주제별</string>
+
+    <!-- mypage -->
+    <string name="mypage_profile_label">프로필 이름</string>
+    <string name="mypage_hello">안녕하세요.</string>
+    <string name="mypage_sir">님</string>
+    <string name="mypage_subscribe_list">구독방송 리스트</string>
+
+    <!-- sign in -->
+    <string name="sign_in">로그인</string>
+    <string name="sign_in_already_account">이미 사바사 계정이 있으세요?</string>
+    <string name="sign_in_failed">로그인을 실패하였어요</string>
+    <string name="sign_in_kakao">카카오로 로그인</string>
+    <string name="sign_in_info">사바사 계정이 없으세요?</string>
+
+    <!-- sign up -->
+    <string name="sign_up">회원가입</string>
+    <string name="sign_up_info">이미 사바사 계정이 있으세요?</string>
+    <string name="sign_up_nick_name_change">다른 걸로 할래요!</string>
+    <string name="sign_up_hide">숨기기</string>
+    <string name="sign_up_show">보이기</string>
+    <string name="sign_up_email_valid">이메일 주소를 확인해주세요</string>
+    <string name="sign_up_password_valid">비밀번호는 4자리 이상이에요</string>
+    <string name="sign_up_succeed">회원가입을 완료하였어요</string>
+    <string name="sign_up_failed">회원가입을 실패하였어요</string>
+
+    <!-- chat -->
+    <string name="chat_msg_hint">대화를 입력하세요.</string>
+    <string name="chat_msg_divider">:&#160;</string>
+    <string name="chat_subscribe">구독하기</string>
+    <string name="chat_subscribe_cancel">구독취소</string>
 </resources>

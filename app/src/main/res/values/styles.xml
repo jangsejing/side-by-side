@@ -1,11 +1,73 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_black</item>
+        <item name="colorPrimaryDark">@color/brand_black</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Vertical Layout 에서 사용하는 구분선 -->
+    <style name="divider_vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey700</item>
+    </style>
+
+    <!-- Horizontal Layout 에서 사용하는 구분선 -->
+    <style name="divider_horizontal">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/grey700</item>
+    </style>
+
+    <!-- TabLayout -->
+    <style name="tab" parent="font_b">
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- BottomNavigationView Selected -->
+    <style name="navigation_selected" parent="font_m">
+        <item name="android:textColor">@color/brand_blue</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <!-- BottomNavigationView UnSelected -->
+    <style name="navigation_unselected" parent="font_m">
+        <item name="android:textColor">@color/grey500</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="font">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Font Style -->
+    <style name="font_r" parent="font">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="font_b" parent="font">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="font_l" parent="font">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="font_m" parent="font">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="font_t" parent="font">
+        <item name="android:fontFamily">@font/roboto_thin</item>
     </style>
 
 </resources>

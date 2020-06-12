@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ddd.airplane.presenter.schedule.viewmodel.ScheduleViewModel" />
+
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        app:theme="@null"
+        app:title=""
+        tools:background="@color/brand_black">
+
+        <!-- 방송사별, 주제별 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_header_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="24dp"
+            android:paddingEnd="13dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            bind:items="@{viewModel.scheduleList}"
+            tools:itemCount="2"
+            tools:listitem="@layout/schedule_header_item" />
+    </androidx.appcompat.widget.Toolbar>
+</layout>

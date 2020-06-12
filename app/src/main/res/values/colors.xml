@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimary">@color/brand_black</color>
+    <color name="colorPrimaryDark">@color/brand_black</color>
+    <color name="colorAccent">@color/brand_blue</color>
+
+    <color name="brand_black">#000000</color>
+    <color name="brand_blue">#00c1ff</color>
+    <color name="brand_orange">#ff4200</color>
+    <color name="brand_mint">#00cdc6</color>
+    <color name="brand_white">#ffffff</color>
+
+    <color name="text_grey">#858585</color>
+    <color name="text_baby">#ffabb1</color>
+    <color name="text_sky">#89ebff</color>
+    <color name="text_yellow">#fed45b</color>
+    <color name="text_pink">#ff93d3</color>
+    <color name="text_blue">#00a1f0</color>
+    <color name="text_navy">#455aff</color>
+    <color name="text_orange">#ff9238</color>
+    <color name="text_green">#009272</color>
+    <color name="text_purple">#a39cff</color>
+    <color name="text_deep">#2c5a76</color>
+
+    <color name="grey800">#191923</color>
+    <color name="grey700">#33333b</color>
+    <color name="grey600">#4c4c54</color>
+    <color name="grey500">#66666b</color>
+    <color name="grey400">#7f7f84</color>
+    <color name="grey300">#99999d</color>
+    <color name="grey200">#ccccce</color>
+    <color name="grey100">#e5e5e7</color>
+
+    <!-- 컬러 리소스 정의되지 않음 -->
+    <color name="color_36363e">#36363e</color>
+
 </resources>

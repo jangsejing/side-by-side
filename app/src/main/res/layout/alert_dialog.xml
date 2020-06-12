@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="39dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shp_rect_grey700_r8"
+        android:orientation="vertical">
+
+        <!-- 바디 컨테이너 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="19dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="15.5dp">
+
+            <!-- 타이틀 -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                style="@style/font_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="9dp"
+                android:textColor="@color/brand_white"
+                android:textSize="16dp"
+                android:visibility="gone"
+                tools:text="제목"
+                tools:visibility="visible" />
+
+            <!-- Body 영역 -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent">
+
+                <!-- 내용 -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_content"
+                    style="@style/font_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/brand_white"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    tools:text="문구블라블 라블라 블 라 블라 블라 블 라이메일주소문구문구 샤바샤뱟"
+                    tools:visibility="visible" />
+            </ScrollView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- 구분선 -->
+        <View style="@style/divider_vertical" />
+
+        <!-- 버튼 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_horizontal_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_negative"
+                style="@style/font_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="10.5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/brand_blue"
+                android:textSize="16dp"
+                android:visibility="gone"
+                tools:text="negative"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_positive"
+                style="@style/font_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="10.5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/brand_blue"
+                android:textSize="16dp"
+                android:visibility="gone"
+                tools:text="positive"
+                tools:visibility="visible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+

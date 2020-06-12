@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ddd.airplane.presenter.home.viewmodel.HomeViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/brand_black">
+
+<!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+<!--                app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="24dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    bind:items="@{viewModel.homeList}" />
+            </androidx.core.widget.NestedScrollView>
+
+<!--            &lt;!&ndash; 헤더 &ndash;&gt;-->
+<!--            <com.google.android.material.appbar.AppBarLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/common_header"-->
+<!--                android:fitsSystemWindows="true"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    app:layout_scrollFlags="scroll|enterAlways">-->
+
+<!--                    <com.ddd.airplane.common.views.component.HeaderView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        app:title="@string/home" />-->
+<!--                </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--            </com.google.android.material.appbar.AppBarLayout>-->
+<!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    </FrameLayout>
+</layout>

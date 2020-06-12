@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ddd.airplane.presenter.schedule.viewmodel.ScheduleTypeViewModel" />
+
+    </data>
+
+    <!-- 방송사별, 주제별 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@color/brand_black">
+
+        <!-- tab tabMinWidth 를 10dp 로 잡아서 전체 padding 을 14로 설정함 -->
+        <com.ddd.airplane.common.views.component.TabLayoutView
+            android:id="@+id/tl_type"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@color/brand_black"
+            android:clipToPadding="false"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/brand_blue"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabMinWidth="10dp"
+            app:tabMode="scrollable"
+            app:tabPadding="0dp"
+            app:tabSelectedTextColor="@color/brand_white"
+            app:tabTextAppearance="@style/tab"
+            app:tabTextColor="@color/grey500"
+            bind:items="@{viewModel.tabList}" />
+
+        <!-- 구분선 -->
+        <View
+            android:id="@+id/v_divider"
+            style="@style/divider_vertical" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_schedule_depth2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                bind:items="@{viewModel.typeList}" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
